@@ -54,5 +54,6 @@ workflows:
         <<: *build
     - deploy-to-npm:
         <<: *deploy
+        context: npm
         requires:
         - deps-n-test
