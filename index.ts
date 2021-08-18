@@ -22,11 +22,12 @@ const main = async () => {
 
   const ch = diff(before, after);
 
-  await notifyWithSlack({
-    url: process.argv[2],
-    changes: ch,
-    location: process.argv[3],
-  });
+  if (ch.length > 0)
+    await notifyWithSlack({
+      url: process.argv[2],
+      changes: ch,
+      location: process.argv[3],
+    });
 };
 
 main().catch((e) => {
