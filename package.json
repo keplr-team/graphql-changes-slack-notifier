@@ -1,0 +1,35 @@
+{
+  "name": "@keplr/graphql-changes-slack-notifier",
+  "description": "Notify changes to a GraphQL schema on slack in a format similar to the GraphQL Inspector GitHub app's",
+  "keywords": [
+    "graphql",
+    "slack",
+    "diff"
+  ],
+  "version": "1.0.0",
+  "bin": {
+    "graphql-changes-slack-notifier": "./lib/index.js"
+  },
+  "homepage": "https://github.com/keplr-team/graphql-changes-slack-notifier",
+  "repository": "git@github.com:keplr-team/graphql-changes-slack-notifier.git",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 lib/index.js"
+  },
+  "dependencies": {
+    "@graphql-inspector/core": "^2.6.1",
+    "@graphql-tools/graphql-file-loader": "^7.0.4",
+    "@graphql-tools/load": "^7.1.6",
+    "@graphql-tools/url-loader": "^7.0.10",
+    "axios": "^0.21.1",
+    "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.1",
+    "@types/pluralize": "^0.0.29",
+    "typescript": "^4.3.5"
+  },
+  "license": "MIT"
+}
