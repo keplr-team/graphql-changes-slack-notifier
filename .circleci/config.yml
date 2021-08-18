@@ -13,7 +13,6 @@ jobs:
     - save_cache:
         paths: ~/.npm
         key: v1-dependencies-{{ checksum "package-lock.json" }}
-    - run: npm run lint -- --no-fix
     - run: npm run build
     - run: npm test
     - store_artifacts:

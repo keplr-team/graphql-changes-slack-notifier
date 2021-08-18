@@ -16,7 +16,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc && chmod 755 lib/index.js"
+    "build": "tsc && chmod 755 lib/index.js",
+    "test": "true"
   },
   "dependencies": {
     "@graphql-inspector/core": "^2.6.1",
